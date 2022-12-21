@@ -1,0 +1,405 @@
+/* resets */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* background-image: url("https://images.unsplash.com/photo-1671394507023-76c50b824053?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --acent-color: #2294ed;
+  --acent-color-dark: #1d6983;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* utility classes */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -8px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  /* border: 2px solid red; */
+  margin-inline: auto;
+  padding: var(--padding-inline-section);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* top banner */
+.banner-text {
+  color: white;
+  /* padding: 15px 30px; */
+  text-align: center;
+}
+
+.top-banner {
+  background-color: #4fb3d4;
+  background-image: url("./assets/asset\ 32.png");
+  background-size: 300px;
+  height: 50px;
+}
+
+/* navigation bar */
+
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.company-logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+.hover-link {
+  color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+  color: var(--acent-color);
+  transition: 0.2s ease-out;
+}
+
+.primary-button {
+  background-color: var(--acent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.primary-button:hover {
+  background-color: var(--acent-color-dark);
+  transition: 0.2s ease-out;
+}
+
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: var(--primary-text-color) !important;
+  padding: 12px 24px;
+}
+
+.secondary-button:hover {
+  color: var(--acent-color) !important;
+  border-color: var(--acent-color);
+  transition: 0.2s ease-out;
+}
+
+/* header */
+
+header {
+  padding: 50px var(--padding-inline-section);
+}
+
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+
+.header-right img {
+  width: 600px;
+}
+
+.header-left {
+  max-width: 40vw;
+}
+.header-left p {
+  margin-top: 10px;
+}
+
+.header-left h1 {
+  margin-top: 20px;
+}
+
+.get-started {
+  margin-top: 30px;
+}
+
+/* company section */
+
+.company-section h6 {
+  text-align: center;
+  font-size: medium;
+}
+
+.company-images {
+  gap: 50px;
+  justify-content: center;
+}
+
+.company-images img {
+  width: 120px;
+}
+
+/* Feature section */
+
+.feature-header {
+  text-align: center;
+  padding: 120px var(--padding-inline-section) 0;
+}
+
+.feature-header h3 {
+  font-size: 30px;
+}
+
+.feature-button {
+  padding-top: 40px;
+}
+
+.box {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  margin-top: 50px;
+}
+
+.box h4 {
+  font-size: 26px;
+}
+
+.box p {
+  font-size: 22px;
+}
+
+.box button {
+  border: none;
+}
+
+.feature-blocks {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 160px;
+  margin-top: 20px;
+}
+
+/* big features section  */
+
+.big-feature-container {
+  gap: 200px;
+  padding: 100px var(--padding-inline-section) 0;
+}
+
+.big-feature-image img {
+  width: 600px;
+}
+.big-feature-image img {
+  width: 600px;
+}
+
+.big-feature-text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.big-feature-text h3 {
+  font-size: 35px;
+}
+.big-feature-text h4 {
+  font-size: 16px;
+}
+.big-feature-text p {
+  font-size: 18px;
+}
+
+/* example section  */
+
+.example-section {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.example-section button {
+  border: none;
+}
+
+.example-img a {
+  width: 600px;
+  border: 2px solid black;
+  display: inline-block;
+  height: 320px;
+  border: none;
+}
+
+.example-img a:hover {
+  box-shadow: 3px 3px rgb(92, 86, 86);
+  transition: 0.2s ease-out;
+}
+.example-text {
+  position: relative;
+  margin-top: 250px;
+  color: white;
+}
+
+.example-img {
+  padding: 80px var(--padding-inline-section) 0;
+  gap: 20px;
+}
+
+/* cta - section   */
+.cta-container {
+  height: 620px;
+  background: #183b54;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cta-container h2,
+h5,
+li {
+  color: white;
+}
+
+#cta-p {
+  color: white;
+}
+
+.cta-container ul {
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+.cta-text {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
+  gap: 40px;
+  width: 450px;
+}
+
+.cta-img img {
+  width: 600px;
+}
+
+#two {
+  position: relative;
+}
+
+.cta-text button {
+  border: none;
+  background-color: #183b54;
+  position: relative;
+  left: 25px;
+  bottom: 15px;
+}
+
+/* extra  */
+
+.extra-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  top: 150px;
+  gap: 20px;
+}
+.extra-container button {
+  border: none;
+}
+
+/* footer */
+
+.footer-container {
+  align-items: center;
+
+  background-color: #ebf2fa;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  top: 200px;
+  justify-content: center;
+  gap: 120px;
+}
+
+.footer-container img {
+  width: 150px;
+  position: relative;
+  bottom: 100px;
+  right: 80px;
+}
+
+.line-column {
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+#product {
+  position: relative;
+  top: 10px;
+}
+
+/* sub footer */
+
+.sub-container {
+  background-color: #b9cde4;
+  height: 55px;
+  width: 100%;
+  position: relative;
+  top: 200px;
+  justify-content: center;
+  gap: 150px;
+}
+
+.sub-footer-text {
+  gap: 30px;
+}
+
+.sub-footer-img {
+  gap: 25px;
+}
+.sub-footer-img img {
+  width: 20px;
+}
+
+.hover-img:hover {
+  cursor: pointer;
+}
